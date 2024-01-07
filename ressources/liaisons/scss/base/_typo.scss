@@ -1,0 +1,114 @@
+/**
+* @author Éloïse Matteau 2141439@csfoy.ca
+  @author Daren Garneau-Dionne [2065779@csfoy.ca]
+*/
+
+/**** Typographie responsive ****/
+
+@font-face {
+  font-family: Poppins;
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+}
+
+$fontePrimaire: Poppins;
+
+/* Base décimale */
+html{
+  font-size: 62.5%;
+}
+
+
+body {
+  /* 16px pour toutes les largeurs d'écran */
+  font-size: 1.6rem;
+  /* facteur multiplicateur de la taille de la police 1.375x16 = 22 */
+  line-height: 1.375;
+@media (min-width: 600px) {
+    line-height: 1.5;
+  }
+@media (min-width: 800px) {
+    line-height: 1.75;
+  }
+}
+
+h1,
+.titreNiveau1,
+h2,
+.titreNiveau2,
+h3,
+.titreNiveau3 {
+  font-family: $fontePrimaire;
+  font-weight: 700;
+}
+
+h1,
+.titreNiveau1 {
+  margin: 0;
+  &--desktop {
+    font-size: 45px;
+    font-size: 4.5rem;
+    padding-bottom: 15px;
+    position: relative;
+    &:after {
+      // background-color: $background;
+      content: "";
+      display: inline-block;
+      width: 150px;
+      height: 8px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+
+h2,
+.titreNiveau2{
+  font-size: 20px;
+  font-size: 2rem;
+  &--desktop {
+    font-size: 28px;
+    font-size: 2.8rem;
+  }
+}
+
+h3,
+.titreNiveau3 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  &--desktop {
+    font-size: 22px;
+    font-size: 2.2rem;
+  }
+}
+
+.navigation-entete_lien {
+  font-size: 19px;
+  font-size: 1.9rem;
+}
+
+.texte{
+  font-family: $fontePrimaire;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  &--desktop {
+    line-height: 1.5;
+  }
+}
+
+.unLabel {
+  font-family: $fontePrimaire;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.laDate {
+  font-family: $fontePrimaire;
+  font-size: 25px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 150%;
+}

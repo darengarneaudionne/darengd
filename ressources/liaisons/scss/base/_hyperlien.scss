@@ -1,0 +1,43 @@
+/**
+* @author Éloïse Matteau 2141439@csfoy.ca
+*/
+
+.hyperlien {
+  color: $hyperlien;
+  text-decoration: none;
+  &:visited {
+  color: darken($hyperlien, 5%);
+  }
+  &:hover {
+  color: darken($hyperlien, 20%);
+  text-decoration: underline;
+  }
+  &:active {
+  color: #162022;
+  text-decoration: underline;
+  }
+  &:focus {
+  border: solid 2px $hyperlien;
+  text-decoration: underline;
+  }
+}
+
+.hyperlien-secondaire {
+  color: $beige;
+  text-decoration: none;
+  &:visited {
+    color: $background;
+  }
+  &:hover {
+    color: $background;
+    text-decoration: underline;
+  }
+  &:active {
+    color: $hyperlien;
+    text-decoration: underline;
+  }
+  &:focus {
+    border: solid 2px $beige;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,76 @@
+/**
+* @author Éloïse Matteau 2141439@csfoy.ca
+*/
+@import "../utilitaires/variables";
+.bouton {
+  background-color: $beige;
+  border-radius: 18px;
+  color: $noir;
+  border: solid 2px $noir;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    color: $rouge;
+    border: solid 2px $rouge;
+  }
+
+  &:active {
+    color: $beige;
+    background-color: $rouge;
+    border: none;
+    box-shadow: 2px 2px 4px rgb(35, 83, 145, 0.5);
+  }
+
+  &:focus {
+    color: $beige;
+    background-color: $rouge;
+    border: solid 2px $beige;
+    box-shadow: 2px 2px 4px rgb(35, 83, 145, 0.5);
+  }
+}
+
+  .btn__principal {
+    @include bouton_rectangle;
+    background-color: $rouge;
+    color: $beige;
+
+    &:hover {
+      background-color: #a81c36;
+      border-color: #a81c36;
+    }
+  }
+
+  .btn__secondaire {
+    @include bouton_rectangle;
+
+    &:hover {
+      background-color: #fce9dc;
+    }
+
+    &:focus {
+      background-color: #fce9dc;
+      border: 2px solid $noir;
+    }
+  }
+
+  .bouton__alternatif {
+    color: $rouge;
+    border: 0;
+    background: none;
+    text-decoration: underline;
+
+  &:hover {
+    color: #a81c36;
+  }
+}
+
+.bouton__quantite {
+  @include bouton_rectangle;
+  width: 60px;
+
+  &:hover {
+    background-color: #fce9dc;
+  }
+}

@@ -1,0 +1,44 @@
+/**
+* @author Éloïse Matteau 2141439@csfoy.ca
+*/
+
+/** Polices de caractères **/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$fontePrimaire : 'Poppins', sans-serif;
+$fonteSecondaire : Arial, sans-serif;
+
+/** Palette de couleurs **/
+// Utiliser http://chir.ag/projects/name-that-color pour obtenir des noms uniques et mémorisables
+// Permettez-vous d'utiliser un nom de variable plus explicite si la suggestion de name-that-color est trop étrange
+
+/* Couleurs de base */
+$background: #F2674B;
+$noir: #162022;
+$rouge: #c92140;
+$beige: #FFF7EA;
+$vertLime:#408820;
+
+$backgroundSombre: #0D1B2A;
+
+/* Fiche de livre */
+$vert: #408820;
+$jaune:#FFCB13;
+
+$rougeTransparent25: rgba(201 33 64 / 25%);
+$rougeTransparent55: rgba(201 33 64 / 55%);
+
+/* Autres couleurs */
+$hyperlien: $rouge;
+$shadowColor : rgb(35, 83, 145, 0.5);
+
+
+/* Caractéristique */
+$bordure-arrondis: 10px;
+
+/* Texte */
+$label:18px;
+
+/** Points de rupture **/
+$desktop : 601px;
+
